@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+	<context:property-placeholder ignore-unresolvable="true" />
+<!--	<bean id="masterDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<property name="url" value="${master.jdbc.url}" /> &lt;!&ndash; ${readsource.jdbc.url} &ndash;&gt;
+		<property name="username" value="${master.jdbc.username}" /> &lt;!&ndash; ${readsource.jdbc.username} &ndash;&gt;
+		<property name="password" value="${master.jdbc.password}" /> &lt;!&ndash; ${readsource.jdbc.password} &ndash;&gt;
+		<property name="filters" value="stat" />
+		<property name="maxActive" value="10" />
+		<property name="maxWait" value="60000" />
+		<property name="initialSize" value="10" />
+		<property name="minIdle" value="10" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+		<property name="validationQuery" value="SELECT 'x'" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+	</bean>
+
+	<bean id="slaveDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<property name="url" value="${slave.jdbc.url}" /> &lt;!&ndash; ${readsource.jdbc.url} &ndash;&gt;
+		<property name="username" value="${slave.jdbc.username}" /> &lt;!&ndash; ${readsource.jdbc.username} &ndash;&gt;
+		<property name="password" value="${slave.jdbc.password}" /> &lt;!&ndash; ${readsource.jdbc.password} &ndash;&gt;
+		<property name="filters" value="stat" />
+		<property name="maxActive" value="300" />
+		<property name="maxWait" value="60000" />
+		<property name="initialSize" value="10" />
+		<property name="minIdle" value="10" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+		<property name="validationQuery" value="SELECT 'x'" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+	</bean>-->
+
+	<bean id="masterDataSource" class="com.alibaba.druid.pool.DruidDataSource" primary="true">
+		<property name="url" value="jdbc:mysql://localhost:3306/xssm" /> <!-- ${readsource.jdbc.url} -->
+		<property name="username" value="root" /> <!-- ${readsource.jdbc.username} -->
+		<property name="password" value="root" /> <!-- ${readsource.jdbc.password} -->
+		<property name="filters" value="stat" />
+		<property name="maxActive" value="10" />
+		<property name="maxWait" value="60000" />
+		<property name="initialSize" value="10" />
+		<property name="minIdle" value="10" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+		<property name="validationQuery" value="SELECT 'x'" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+	</bean>
+
+	<bean id="slaveDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<property name="url" value="jdbc:mysql://hadoop01:3306/xssm" /> <!-- ${readsource.jdbc.url} -->
+		<property name="username" value="root" /> <!-- ${readsource.jdbc.username} -->
+		<property name="password" value="root" /> <!-- ${readsource.jdbc.password} -->
+		<property name="filters" value="stat" />
+		<property name="maxActive" value="300" />
+		<property name="maxWait" value="60000" />
+		<property name="initialSize" value="10" />
+		<property name="minIdle" value="10" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+		<property name="validationQuery" value="SELECT 'x'" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+	</bean>
+
+</beans>

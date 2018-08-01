@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="xbs-spring-dubbo-consumer" />
+
+    <dubbo:registry address="zookeeper://localhost:2181" />
+
+    <dubbo:reference id="sysUserService" interface="com.xuebusi.xbs.user.api.ISysUserService" check="false"/>
+    <dubbo:reference id="redisService" interface="com.xuebusi.xbs.user.api.IRedisService" check="false"/>
+
+</beans>

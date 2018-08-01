@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="xbs-web:war">
+    <output-path>$PROJECT_DIR$/xbs-web/target</output-path>
+    <root id="archive" name="xbs-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="xbs-web:war exploded" />
+    </root>
+  </artifact>
+</component>

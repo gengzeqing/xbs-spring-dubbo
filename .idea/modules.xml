@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/xbs-api/xbs-api.iml" filepath="$PROJECT_DIR$/xbs-api/xbs-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xbs-common/xbs-common.iml" filepath="$PROJECT_DIR$/xbs-common/xbs-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xbs-dao/xbs-dao.iml" filepath="$PROJECT_DIR$/xbs-dao/xbs-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xbs-domain/xbs-domain.iml" filepath="$PROJECT_DIR$/xbs-domain/xbs-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xbs-provide/xbs-provide.iml" filepath="$PROJECT_DIR$/xbs-provide/xbs-provide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xbs-service/xbs-service.iml" filepath="$PROJECT_DIR$/xbs-service/xbs-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/xbs-spring-dubbo.iml" filepath="$PROJECT_DIR$/.idea/xbs-spring-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xbs-test/xbs-test.iml" filepath="$PROJECT_DIR$/xbs-test/xbs-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xbs-web/xbs-web.iml" filepath="$PROJECT_DIR$/xbs-web/xbs-web.iml" />
+    </modules>
+  </component>
+</project>

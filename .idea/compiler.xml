@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xbs-api" />
+        <module name="xbs-common" />
+        <module name="xbs-dao" />
+        <module name="xbs-domain" />
+        <module name="xbs-provide" />
+        <module name="xbs-service" />
+        <module name="xbs-test" />
+        <module name="xbs-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xbs-api" target="1.7" />
+      <module name="xbs-common" target="1.7" />
+      <module name="xbs-dao" target="1.7" />
+      <module name="xbs-domain" target="1.7" />
+      <module name="xbs-provide" target="1.8" />
+      <module name="xbs-service" target="1.7" />
+      <module name="xbs-spring-dubbo" target="1.7" />
+      <module name="xbs-test" target="1.7" />
+      <module name="xbs-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
