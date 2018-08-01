@@ -30,10 +30,10 @@ public class SwaggerConfig {
 	    }
 
 	    private ApiInfo apiInfo() {
-	        Contact contact = new Contact("电商组运营后台", "", "");
+	        Contact contact = new Contact("测试信息", "", "");
 	        return new ApiInfoBuilder()
-	                .title("电商组运营后台API接口")
-	                .description("电商组运营后台API接口")
+	                .title("测试API接口")
+	                .description("测试API接口")
 	                .contact(contact)
 	                .version("1.1.0")
 	                .build();
