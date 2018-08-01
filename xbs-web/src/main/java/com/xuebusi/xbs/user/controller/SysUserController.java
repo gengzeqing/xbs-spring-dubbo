@@ -37,7 +37,7 @@ public class SysUserController {
         return sysUserService.testUser();
     }
 
-    @ApiOperation(value = "统计信息", notes = "统计信息", httpMethod = "GET")
+    @ApiOperation(value = "统计信息", notes = "统计信息", httpMethod = "POST")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "sysUserDto", value = "\t{\n" +
                     "\t	\"id\":\"ID\",\n" +
@@ -48,7 +48,7 @@ public class SysUserController {
                     "\t}\n"
                     ,required = true, dataType = "String_JSON")
     })
-    @GetMapping(value = "/countByExample")
+    @PostMapping(value = "/countByExample")
     public Integer countByExample(@RequestBody SysUserDto sysUserDto) {
         return sysUserService.countByExample(sysUserDto);
     }
