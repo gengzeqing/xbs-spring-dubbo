@@ -5,6 +5,7 @@ import com.xuebusi.xbs.user.api.IRedisService;
 import com.xuebusi.xbs.user.api.ISysUserService;
 import com.xuebusi.xbs.user.dto.SysUserDto;
 import com.xuebusi.xbs.user.vo.SysUserVo;
+import com.xuebusi.xbs.util.logutil.LogMgr;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -34,7 +35,14 @@ public class SysUserController {
     @ApiOperation(value = "测试接口是否联通", notes = "测试接口是否联通", httpMethod = "GET")
     @GetMapping(value = "/testUser")
     public String testUser() {
-        return sysUserService.testUser();
+        String user = null;
+        try {
+            user = sysUserService.testUser();
+            LogMgr.sysInfo("出参：" + user);
+        } catch (Exception e) {
+            LogMgr.error("错误：" + e.toString());
+        }
+        return user;
     }
 
     @ApiOperation(value = "统计信息", notes = "统计信息", httpMethod = "POST")
