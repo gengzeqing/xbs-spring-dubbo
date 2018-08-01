@@ -13,7 +13,7 @@ public class HeaderFilter implements Filter {
 
 	@Override
 	public void destroy() {
-		
+
 	}
 
 	/**

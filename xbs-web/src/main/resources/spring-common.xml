@@ -11,7 +11,7 @@
     <aop:aspectj-autoproxy proxy-target-class="true"/>
     <!-- 配置注解类型的Bean扫描 -->
     <context:annotation-config/>
-    <context:component-scan base-package="com.xuebusi"/>
+    <context:component-scan base-package="com.xuebusi.xbs"/>
     
     <bean class="com.xuebusi.xbs.util.SpringContextUtil"/>
     

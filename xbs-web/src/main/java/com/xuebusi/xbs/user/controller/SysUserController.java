@@ -5,6 +5,10 @@ import com.xuebusi.xbs.user.api.IRedisService;
 import com.xuebusi.xbs.user.api.ISysUserService;
 import com.xuebusi.xbs.user.dto.SysUserDto;
 import com.xuebusi.xbs.user.vo.SysUserVo;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -18,6 +22,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping(value = "/sys/user")
+@Api(tags = "测试登录 (耿泽庆)")
 public class SysUserController {
 
     @Resource
@@ -26,11 +31,23 @@ public class SysUserController {
     @Resource
     private IRedisService redisService;
 
+    @ApiOperation(value = "测试接口是否联通", notes = "测试接口是否联通", httpMethod = "GET")
     @GetMapping(value = "/testUser")
     public String testUser() {
         return sysUserService.testUser();
     }
 
+    @ApiOperation(value = "统计信息", notes = "统计信息", httpMethod = "GET")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "sysUserDto", value = "\t{\n" +
+                    "\t	\"id\":\"ID\",\n" +
+                    "\t	\"name\":\"名称\",\n" +
+                    "\t	\"address\":\"地址\",\n" +
+                    "\t	\"age\":\"年龄\",\n" +
+                    "\t	\"phone\":\"电话\",\n" +
+                    "\t}\n"
+                    ,required = true, dataType = "String_JSON")
+    })
     @GetMapping(value = "/countByExample")
     public Integer countByExample(@RequestBody SysUserDto sysUserDto) {
         return sysUserService.countByExample(sysUserDto);
