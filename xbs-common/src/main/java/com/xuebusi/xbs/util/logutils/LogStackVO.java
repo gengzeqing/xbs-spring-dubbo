@@ -1,4 +1,4 @@
-package com.xuebusi.xbs.util.logutil;
+package com.xuebusi.xbs.util.logutils;
 
 public class LogStackVO {
     private String className;

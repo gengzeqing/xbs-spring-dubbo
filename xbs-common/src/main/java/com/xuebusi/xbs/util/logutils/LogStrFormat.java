@@ -1,4 +1,4 @@
-package com.xuebusi.xbs.util.logutil;
+package com.xuebusi.xbs.util.logutils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

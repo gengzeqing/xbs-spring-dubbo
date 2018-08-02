@@ -1,4 +1,4 @@
-package com.xuebusi.xbs.util.logutil;
+package com.xuebusi.xbs.util.logutils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

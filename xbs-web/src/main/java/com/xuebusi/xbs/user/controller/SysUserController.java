@@ -5,7 +5,7 @@ import com.xuebusi.xbs.user.api.IRedisService;
 import com.xuebusi.xbs.user.api.ISysUserService;
 import com.xuebusi.xbs.user.dto.SysUserDto;
 import com.xuebusi.xbs.user.vo.SysUserVo;
-import com.xuebusi.xbs.util.logutil.LogMgr;
+import com.xuebusi.xbs.util.logutils.LogMgr;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
