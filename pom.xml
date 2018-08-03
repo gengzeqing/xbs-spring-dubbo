@@ -4,6 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <groupId>com.xuebusi</groupId>
     <artifactId>xbs-spring-dubbo</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -178,6 +182,11 @@
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
             <version>3.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.2</version>
         </dependency>
 
 

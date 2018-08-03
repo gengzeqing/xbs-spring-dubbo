@@ -24,10 +24,6 @@ public final class FLStringUtil extends StringUtils {
 
     private final static Logger log = LoggerFactory.getLogger(FLStringUtil.class);
 
-    /**金额为分的格式 */
-    public static final String CURRENCY_FEN_REGEX = "^(([1-9]{1}\\d*)|([0]{1}))(\\.(\\d){0,2})?$";
-
-
     public static String toString(Object obj) {
         return toString(obj, null);
     }
@@ -374,36 +370,6 @@ public final class FLStringUtil extends StringUtils {
         }
         String phoneNumber = phone.replaceAll("(\\d{3})\\d{4}(\\d{4})","$1****$2");
         return phoneNumber;
-    }
-
-    /**
-     * 分转换元
-     * @param amount
-     * @return
-     */
-    public static BigDecimal changeF2Y(Long amount) throws Exception{
-        if(null == amount){
-            throw new Exception("金额不能为null");
-        }
-        //设置小数位数，第一个变量是小数位数，第二个变量是取舍方法(进位处理)
-        BigDecimal bPrice = new BigDecimal(amount);
-        bPrice=bPrice.divide(new BigDecimal(10000),2,BigDecimal.ROUND_UP);
-        return bPrice;
-    }
-
-    /**
-     * 元转换成分
-     * @param amount
-     * @return
-     */
-    public static BigDecimal changeY2F(String amount) throws Exception{
-        if(!amount.matches(CURRENCY_FEN_REGEX)) {
-            throw new Exception("金额格式有误");
-        }
-        BigDecimal bPrice=new BigDecimal(amount);
-        bPrice=bPrice.multiply(new BigDecimal(10000));
-
-        return bPrice;
     }
 
 
