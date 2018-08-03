@@ -5,6 +5,8 @@ import java.io.Serializable;
 
 /**
  * 分页信息工具类
+ * PageUtil page = new PageUtil(pageNum, pageSize);
+ * page.getOffset(), page.getLimit()
  */
 public class PageUtil implements Serializable{
 
