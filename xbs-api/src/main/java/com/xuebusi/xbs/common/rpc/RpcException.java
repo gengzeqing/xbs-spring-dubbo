@@ -1,4 +1,4 @@
-package com.xuebusi.xbs.utils.RequestUtils;
+package com.xuebusi.xbs.common.rpc;
 import java.util.HashMap;
 import java.util.Map;
 

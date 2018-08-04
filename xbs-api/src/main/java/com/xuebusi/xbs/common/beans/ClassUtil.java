@@ -1,4 +1,4 @@
-package com.xuebusi.xbs.util.beans;
+package com.xuebusi.xbs.common.beans;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

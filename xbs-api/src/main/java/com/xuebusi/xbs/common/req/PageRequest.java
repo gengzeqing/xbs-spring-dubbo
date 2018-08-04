@@ -1,4 +1,5 @@
-package com.xuebusi.xbs.utils.RequestUtils;
+package com.xuebusi.xbs.common.req;
+
 import java.io.Serializable;
 public class PageRequest<T> extends Request<T> {
 

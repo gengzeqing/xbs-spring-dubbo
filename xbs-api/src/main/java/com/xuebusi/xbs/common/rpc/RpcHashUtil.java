@@ -1,4 +1,4 @@
-package com.xuebusi.xbs.utils.RequestUtils;
+package com.xuebusi.xbs.common.rpc;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

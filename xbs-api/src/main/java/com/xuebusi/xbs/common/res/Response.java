@@ -1,4 +1,6 @@
-package com.xuebusi.xbs.utils.RequestUtils;
+package com.xuebusi.xbs.common.res;
+import com.xuebusi.xbs.common.rpc.RpcUUIDGenerator;
+
 import java.io.Serializable;
 public class Response<T> implements Serializable {
 

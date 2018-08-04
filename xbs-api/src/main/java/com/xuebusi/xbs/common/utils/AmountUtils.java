@@ -1,4 +1,4 @@
-package com.xuebusi.xbs.util;
+package com.xuebusi.xbs.common.utils;
 
 import java.math.BigDecimal;
 

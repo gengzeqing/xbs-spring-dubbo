@@ -1,4 +1,4 @@
-package com.xuebusi.xbs.utils.RequestUtils;
+package com.xuebusi.xbs.common.res;
 
 public class PageResponse<T> extends Response<T> {
 

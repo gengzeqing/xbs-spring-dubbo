@@ -1,4 +1,4 @@
-package com.xuebusi.xbs.utils.RequestUtils;
+package com.xuebusi.xbs.common.rpc;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;

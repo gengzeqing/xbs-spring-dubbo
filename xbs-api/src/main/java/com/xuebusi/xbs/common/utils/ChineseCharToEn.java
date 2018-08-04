@@ -1,7 +1,7 @@
 /**
  * 梦想工场 版权所有 Copyright@2018
  */
-package com.xuebusi.xbs.utils.RequestUtils;
+package com.xuebusi.xbs.common.utils;
 
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;

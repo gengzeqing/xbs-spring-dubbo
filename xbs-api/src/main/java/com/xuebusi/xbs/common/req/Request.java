@@ -1,4 +1,8 @@
-package com.xuebusi.xbs.utils.RequestUtils;
+package com.xuebusi.xbs.common.req;
+import com.xuebusi.xbs.common.rpc.RpcException;
+import com.xuebusi.xbs.common.rpc.RpcNetworkUtil;
+import com.xuebusi.xbs.common.rpc.RpcUUIDGenerator;
+
 import java.io.Serializable;
 
 public class Request<T> implements Serializable {
