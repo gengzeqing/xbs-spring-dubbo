@@ -6,6 +6,7 @@ import javax.xml.bind.Marshaller.Listener;
 public class MarshallerListener extends Listener {
 	public static final String BLANK_CHAR = "";
 
+	@Override
 	public void beforeMarshal(Object source) {
 		super.beforeMarshal(source);
 		Field[] fields = source.getClass().getDeclaredFields();
