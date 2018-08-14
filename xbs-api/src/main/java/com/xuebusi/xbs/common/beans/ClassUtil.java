@@ -113,7 +113,7 @@ public class ClassUtil<T> {
 		// 获得所有的属性
 		Field[] bfs = bc.getDeclaredFields();
 		for (int i = 0; i < bfs.length; i++) {
-			// 获得第一个属性
+			// 获得当前的一个属性
 			Field bf = bfs[i];
 			bf.setAccessible(true);		//属性设置为可访问的
 			Object v;					//base属性值
