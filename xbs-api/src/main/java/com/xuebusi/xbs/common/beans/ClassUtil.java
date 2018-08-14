@@ -110,12 +110,15 @@ public class ClassUtil<T> {
 		}
 
 		Class<? extends Object> bc = base.getClass();
+		// 获得所有的属性
 		Field[] bfs = bc.getDeclaredFields();
 		for (int i = 0; i < bfs.length; i++) {
+			// 获得第一个属性
 			Field bf = bfs[i];
 			bf.setAccessible(true);		//属性设置为可访问的
 			Object v;					//base属性值
 			try {
+				// 从基类中取出该属性的值
 				v = bf.get(base);
 				if (v == null && !HandleNull)
 					continue;
@@ -129,6 +132,7 @@ public class ClassUtil<T> {
 				Object newc = results[j];
 				if (newc != null)
 				try {
+					// 取出需要Copy的赋值属性
 					Field cf = cs[j].getDeclaredField(bAttr);	//如果不含此属性名称，则进入catch()
 					{	//是否final属性（final修饰不做修改）
 						int m = cf.getModifiers();
